@@ -39,7 +39,52 @@
 
 > Fork of `ElemeFE/element` 2.15.14 with patched QAXOSS-2021-054210 (async-validator v1 security vulnerability).
 
+
+
 > A Vue.js 2.0 UI Toolkit for Web.
+
+## Usage
+
+### Installation
+
+```bash
+npm install @sluodev/element-ui --save
+```
+
+### CSS Import
+
+When importing CSS in your project, replace:
+```css
+@import "~element-ui/packages/theme-chalk/src/index";
+```
+with:
+```css
+@import "~@sluodev/element-ui/packages/theme-chalk/src/index";
+```
+
+### Configuration in vue.config.js
+
+Add the following configuration to your `vue.config.js` file:
+
+```js
+const path = require('path');
+const resolve = dir => path.join(__dirname, dir);
+
+module.exports = {
+  // ...other configs
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': resolve('src'),
+        'element-ui': '@sluodev/element-ui',
+        'element-ui/lib': '@sluodev/element-ui/lib',
+        'element-ui/packages': '@sluodev/element-ui/packages',
+        'element-ui/src': '@sluodev/element-ui/src'
+      }
+    },
+  },
+}
+```
 
 Element will stay with Vue 2.x
 
@@ -69,11 +114,6 @@ For MiniProgram development, we recommend using [MorJS](https://github.com/eleme
 - Gitter
   - [International users](https://gitter.im/element-en/Lobby)
   - [Chinese users](https://gitter.im/ElemeFE/element)
-
-## Install
-```shell
-npm install element-ui -S
-```
 
 ## Quick Start
 ``` javascript
