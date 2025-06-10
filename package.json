@@ -1,6 +1,6 @@
 {
-  "name": "element-ui",
-  "version": "2.15.14",
+  "name": "@sluodev/element-ui",
+  "version": "2.15.15",
   "description": "A Component Library for Vue.js.",
   "main": "lib/element-ui.common.js",
   "files": [
@@ -46,23 +46,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:ElemeFE/element.git"
+    "url": "git@github.com:sluodev/element.git"
   },
-  "homepage": "http://element.eleme.io",
+  "homepage": "https://github.com/sluodev/element",
   "keywords": [
     "eleme",
     "vue",
-    "components"
+    "components",
+    "sluodev"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ElemeFE/element/issues"
+    "url": "https://github.com/sluodev/element/issues"
   },
   "unpkg": "lib/index.js",
   "style": "lib/theme-chalk/index.css",
   "web-types": "./web-types.json",
   "dependencies": {
-    "async-validator": "~1.8.1",
+    "async-validator": "4.0.7",
     "babel-helper-vue-jsx-merge-props": "^2.0.0",
     "deepmerge": "^1.2.0",
     "normalize-wheel": "^1.0.1",
