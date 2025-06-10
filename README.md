@@ -36,6 +36,9 @@
   </a>
 </p>
 
+
+> Fork of `ElemeFE/element` 2.15.14 with patched QAXOSS-2021-054210 (async-validator v1 security vulnerability).
+
 > A Vue.js 2.0 UI Toolkit for Web.
 
 Element will stay with Vue 2.x

@@ -1,5 +1,13 @@
 ## Changelog
 
+### 2.15.15
+
+*2025-06-10*
+
+#### Optimization
+- Chore
+  - (es) Actualización de async-validator a la versión 4.0.7
+
 ### 2.15.14
 
 *2023-08-24*
